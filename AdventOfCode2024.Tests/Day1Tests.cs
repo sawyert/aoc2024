@@ -23,7 +23,6 @@ public class Tests
         var result = day.SolvePart1();
         
         Console.WriteLine(result);
-        Assert.Pass();
     }
     
     [Test]
@@ -42,6 +41,5 @@ public class Tests
         var result = day.SolvePart2();
         
         Console.WriteLine(result);
-        Assert.Pass();
     }
 }
