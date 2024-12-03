@@ -4,6 +4,8 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 
+Day*.txt
+
 AdventOfCode2024.sln.DotSettings.user
 
 # Created by https://www.toptal.com/developers/gitignore/api/rider,dotnetcore,macos
