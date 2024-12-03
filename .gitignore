@@ -4,9 +4,8 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 
-AdventOfCode2024.Tests/Inputs/
-
-AdventOfCode2024.sln.DotSettings.user
+Inputs/
+/AdventOfCode2024.sln.DotSettings.user
 
 # Created by https://www.toptal.com/developers/gitignore/api/rider,dotnetcore,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=rider,dotnetcore,macos
