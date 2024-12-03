@@ -4,7 +4,7 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 
-Day*.txt
+AdventOfCode2024.Tests/Inputs/
 
 AdventOfCode2024.sln.DotSettings.user
 
