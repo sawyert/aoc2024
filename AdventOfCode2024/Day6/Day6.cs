@@ -33,6 +33,7 @@ public class Day6(string[] readAllLines)
                 if (readAllLines[row][column] == '^')
                 {
                     current = new Position(row, column);
+                    SetChar(current,'X');
                 }
             }
         }
@@ -124,71 +125,7 @@ public class Day6(string[] readAllLines)
 
     public long SolvePart2()
     {
-        for (int extraBlockrow = 0; extraBlockrow < readAllLines.Length; extraBlockrow++)
-        {
-            for (int extraBlockColumn = 0; extraBlockColumn < readAllLines[extraBlockrow].Length; extraBlockColumn++)
-            {
-                this.map = new char[readAllLines.Length,readAllLines[0].Length];
-                var direction = Direction.Up;
-                for (int row = 0; row < map.Length; row++)
-                {
-                    for (int column = 0; column < readAllLines[row].Length; column++)
-                    {
-                        this.map[row, column] = readAllLines[row][column];
-               
-                        if (readAllLines[row][column] == '^')
-                        {
-                            current = new Position(row, column);
-                        }
-                    }
-                }
-                
-                if (map[extraBlockrow,extraBlockColumn] == '#')
-                {
-                    continue;
-                }
-
-                if (map[extraBlockrow,extraBlockColumn] == '^')
-                {
-                    continue;
-                }
-                
-                if (map[extraBlockrow,extraBlockColumn] == 'X')
-                {
-                    continue;
-                }
-
-                map[extraBlockrow, extraBlockColumn] = '#';
-
-                for (var countSquares = 0; countSquares < 1000; countSquares++)
-                {
-                    direction = moveOne(direction);
-                    if (direction == Direction.OffMap)
-                    {
-                        break;
-                    }
-                    SetChar(current,'X');
-                }
-                
-            }
-        }
-
-
-
-
-    
-
-        var successfulBlockers = 0;
-        for (int row = 0; row < readAllLines.Length; row++)
-        {
-            for (int column = 0; column < readAllLines[row].Length; column++)
-            {
-                if (map[row,column] == 'X')
-                {
-                    successfulBlockers++;
-                }
-            }
-        }
-        return successfulBlockers;
+      
+        return 0;
     }
 }
