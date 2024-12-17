@@ -74,7 +74,7 @@ public class Trailhead(int row, int column, string[] map)
             {
                 _ = map[row + direction.X][column + direction.Y];
             }
-            catch (IndexOutOfRangeException e)
+            catch (IndexOutOfRangeException)
             {
                 continue;
             }

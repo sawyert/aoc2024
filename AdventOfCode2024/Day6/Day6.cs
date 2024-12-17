@@ -83,7 +83,7 @@ public class Day6(string[] readAllLines)
             //Console.WriteLine(next.ToString());
             current = next;
         }
-        catch (IndexOutOfRangeException ex)
+        catch (IndexOutOfRangeException)
         {
             direction = Direction.OffMap;
         }
